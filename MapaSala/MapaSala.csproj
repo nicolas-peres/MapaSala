@@ -46,17 +46,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Login.cs" />
+    <Compile Include="Classes\Usuarios.cs" />
     <Compile Include="DAO\CursoDAO.cs" />
     <Compile Include="DAO\CursoDisciplinasDAO.cs" />
     <Compile Include="DAO\DisciplinaDAO.cs" />
     <Compile Include="DAO\HorarioDAO.cs" />
     <Compile Include="DAO\ProfessoresDAO.cs" />
     <Compile Include="DAO\SalasDAO.cs" />
+    <Compile Include="Formularios\Cadastrar\FrmCadastrarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastrar\FrmCadastrarUsuarios.Designer.cs">
+      <DependentUpon>FrmCadastrarUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Editar\frmEditarDisciplina.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Editar\frmEditarDisciplina.Designer.cs">
       <DependentUpon>frmEditarDisciplina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cadastrar\FrmCadastrarDisciplina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cadastrar\FrmCadastrarDisciplina.Designer.cs">
+      <DependentUpon>FrmCadastrarDisciplina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Editar\FrmEditarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Editar\FrmEditarUsuario.Designer.cs">
+      <DependentUpon>FrmEditarUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmCursoDisciplinacs.cs">
       <SubType>Form</SubType>
@@ -100,6 +120,18 @@
     <Compile Include="Formularios\frmMapaSala.Designer.cs">
       <DependentUpon>frmMapaSala.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMapaDeSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMapaDeSala.Designer.cs">
+      <DependentUpon>FrmMapaDeSala.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,8 +140,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\Cadastrar\FrmCadastrarUsuarios.resx">
+      <DependentUpon>FrmCadastrarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Editar\frmEditarDisciplina.resx">
       <DependentUpon>frmEditarDisciplina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cadastrar\FrmCadastrarDisciplina.resx">
+      <DependentUpon>FrmCadastrarDisciplina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Editar\FrmEditarUsuario.resx">
+      <DependentUpon>FrmEditarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmCursoDisciplinacs.resx">
       <DependentUpon>frmCursoDisciplinacs.cs</DependentUpon>
@@ -128,6 +169,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMapaSala.resx">
       <DependentUpon>frmMapaSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMapaDeSala.resx">
+      <DependentUpon>FrmMapaDeSala.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -159,6 +209,9 @@
       <Project>{0bf79062-b7d1-4989-83c3-355222ba90e1}</Project>
       <Name>Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BD\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

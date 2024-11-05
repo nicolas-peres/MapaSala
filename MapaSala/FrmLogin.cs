@@ -7,18 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Model.Entidades;
 
-namespace MapaSala.Formularios
+namespace MapaSala
 {
-    public partial class FrmUsuarios: Form
+    public partial class FrmLogin : Form
     {
-        public FrmUsuarios()
+        public FrmLogin()
         {
-          
+            InitializeComponent();
         }
 
-        private void txtPesquisar_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLogin_TextChanged(object sender, EventArgs e)
         {
 
         }
