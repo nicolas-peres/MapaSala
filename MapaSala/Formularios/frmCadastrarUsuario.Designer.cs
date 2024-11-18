@@ -41,14 +41,14 @@ namespace MapaSala.Formularios
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(29, 192);
+            this.txtSenha.Location = new System.Drawing.Point(9, 166);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(148, 20);
             this.txtSenha.TabIndex = 0;
             // 
             // txtLogin
             // 
-            this.txtLogin.Location = new System.Drawing.Point(29, 123);
+            this.txtLogin.Location = new System.Drawing.Point(9, 97);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(148, 20);
             this.txtLogin.TabIndex = 1;
@@ -57,7 +57,7 @@ namespace MapaSala.Formularios
             // chkAtivo
             // 
             this.chkAtivo.AutoSize = true;
-            this.chkAtivo.Location = new System.Drawing.Point(29, 231);
+            this.chkAtivo.Location = new System.Drawing.Point(9, 205);
             this.chkAtivo.Name = "chkAtivo";
             this.chkAtivo.Size = new System.Drawing.Size(50, 17);
             this.chkAtivo.TabIndex = 2;
@@ -81,7 +81,7 @@ namespace MapaSala.Formularios
             // 
             // btncadastro
             // 
-            this.btncadastro.Location = new System.Drawing.Point(38, 276);
+            this.btncadastro.Location = new System.Drawing.Point(18, 250);
             this.btncadastro.Name = "btncadastro";
             this.btncadastro.Size = new System.Drawing.Size(130, 23);
             this.btncadastro.TabIndex = 4;
@@ -92,7 +92,7 @@ namespace MapaSala.Formularios
             // Senha
             // 
             this.Senha.AutoSize = true;
-            this.Senha.Location = new System.Drawing.Point(26, 163);
+            this.Senha.Location = new System.Drawing.Point(6, 137);
             this.Senha.Name = "Senha";
             this.Senha.Size = new System.Drawing.Size(38, 13);
             this.Senha.TabIndex = 3;
@@ -101,7 +101,7 @@ namespace MapaSala.Formularios
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 93);
+            this.label1.Location = new System.Drawing.Point(6, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 0;
